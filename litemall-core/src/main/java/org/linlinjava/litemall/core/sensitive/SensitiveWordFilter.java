@@ -7,6 +7,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.util.StreamUtils;
 import org.springframework.util.StringUtils;
 
+import org.springframework.stereotype.Component;
+
 import javax.servlet.*;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletRequestWrapper;
@@ -26,6 +28,7 @@ import java.util.Map;
  * 用于拦截所有外部请求，检查请求参数中是否包含敏感词
  * 不侵入业务代码，通过Filter实现请求拦截
  */
+@Component
 public class SensitiveWordFilter implements Filter {
 
     @Autowired
