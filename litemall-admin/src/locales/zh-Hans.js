@@ -41,6 +41,7 @@ export default {
       sys_notice: '通知管理',
       sys_log: '操作日志',
       sys_role: '角色管理',
+      sys_sensitive: '敏感词管理',
       sys_os: '对象存储',
       config: '配置管理',
       config_mall: '商场配置',

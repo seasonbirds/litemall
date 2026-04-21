@@ -432,6 +432,16 @@ export const asyncRoutes = [
         }
       },
       {
+        path: 'sensitive',
+        component: () => import('@/views/sys/sensitive'),
+        name: 'sensitive',
+        meta: {
+          perms: ['GET /admin/sensitive/list', 'POST /admin/sensitive/create', 'POST /admin/sensitive/update', 'POST /admin/sensitive/delete', 'POST /admin/sensitive/enable', 'POST /admin/sensitive/disable'],
+          title: 'app.menu.sys_sensitive',
+          noCache: true
+        }
+      },
+      {
         path: 'os',
         component: () => import('@/views/sys/os'),
         name: 'os',
